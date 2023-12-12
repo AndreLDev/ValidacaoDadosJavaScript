@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Formulario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Formulario</title>
 </head>
-    <body>
-       <img src="assets/img/sticker.png" alt="">
-            
-            <div class="content">
-               
-                <h2>Validação JavaScript 🖋</h2>
-                    <form id="formulario">
-                        <div>
-                            <input type="text" placeholder="Digite seu nome Completo" class="inputs">
-                            <span class="span-required">Nome deve ter no mínino 5 caracteres</span>
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Digite seu email" class="inputs">
-                            <span class="span-required">Digite um e-mail válido</span>
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Digite uma senha" class="inputs">
-                            <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span>
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Repetir senha" class="inputs">
-                            <span class="span-required">As senhas devem ser iguais</span>
-                        </div>
-                            <button type="submit">Enviar</button>
-                </form>
-        </div>
+<body>
+  <img src="./assets/img/sticker.png" alt="">
 
-        
-        <script src="assets/js/script.js"></script> 
-    </body>
+  <div class="content">
+
+    <h2>Validação JavaScript </h2>
+
+    <form id="formulario">
+      <div>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome Completo" class="inputs">
+        <span class="span-required" id="error-nome">Nome deve ter no mínimo 5 caracteres</span>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu email" class="inputs">
+        <span class="span-required" id="error-email">Digite um e-mail válido</span>
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite uma senha" class="inputs">
+        <span class="span-required" id="error-senha">Digite uma senha com no mínimo 6 caracteres</span>
+      </div>
+      <div>
+        <label for="confirmacao-senha">Confirmar Senha:</label>
+        <input type="password" id="confirmacao-senha" placeholder="Repetir senha" class="inputs">
+        <span class="span-required" id="error-confirmacao">As senhas devem ser iguais</span>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="./assets/script/script.js"></script>
+</body>
 </html>
